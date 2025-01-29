@@ -1,2 +1,5 @@
 # Backend
-To start the app, run "flask run."
+To start the app, run:
+```bash 
+flask run
+```
