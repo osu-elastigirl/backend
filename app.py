@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import json
 import datetime
 from services.finnhub_service import get_recommendation_trends, get_company_news
+=======
+from flask import Flask, request
+>>>>>>> 4ce3d6050599105f94fb470057d4689e29e56841
 
 
+<<<<<<< HEAD
 def main():
     # List of stocks you want to process.
     stocks = [
@@ -58,3 +63,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+=======
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+@app.route('/description', methods=['POST'])
+def description():
+    request_data = request.get_json()
+    description = request_data['description']
+    return process_description(description)
+    
+def process_description(description):
+    # Your code here
+    pass
+
+if __name__ == '__main__':
+    app.run(port=5000,host="0.0.0.0")
+>>>>>>> 4ce3d6050599105f94fb470057d4689e29e56841
