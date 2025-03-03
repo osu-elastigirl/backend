@@ -1,6 +1,9 @@
 from flask import Flask, request
 from ai import get_recommendations
 import json, flask_cors
+import json
+import datetime
+from services.finnhub_service import get_recommendation_trends, get_company_news
 
 flask_cors.logging.getLogger('flask_cors').level = flask_cors.logging.DEBUG
 
@@ -23,6 +26,36 @@ def description():
     
 def process_description(description):
     return get_recommendations(description, gemini_key).text
+
+def getFinnhubData(stocks:list):
+    
+    # Use today's date for the news; format: YYYY-MM-DD.
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    
+    # Dictionary to store all data.
+    all_stock_data = {}
+    
+    for stock in stocks:
+        print(f"Fetching data for {stock}...")
+        
+        try:
+            rec_trends = get_recommendation_trends(stock)
+        except Exception as e:
+            print(f"Error fetching recommendation trends for {stock}: {e}")
+            rec_trends = []
+        
+        try:
+            news = get_company_news(stock, from_date=today, to_date=today)
+        except Exception as e:
+            print(f"Error fetching company news for {stock}: {e}")
+            news = []
+        
+        all_stock_data[stock] = {
+            "recommendation_trends": rec_trends,
+            "company_news": news
+        }
+        
+    return all_stock_data
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True, host='0.0.0.0')

@@ -1,0 +1,911 @@
+{
+  "AAPL": {
+    "recommendation_trends": [
+      {
+        "buy": 25,
+        "hold": 13,
+        "period": "2025-02-01",
+        "sell": 3,
+        "strongBuy": 12,
+        "strongSell": 1,
+        "symbol": "AAPL"
+      },
+      {
+        "buy": 26,
+        "hold": 13,
+        "period": "2025-01-01",
+        "sell": 2,
+        "strongBuy": 14,
+        "strongSell": 0,
+        "symbol": "AAPL"
+      },
+      {
+        "buy": 26,
+        "hold": 13,
+        "period": "2024-12-01",
+        "sell": 2,
+        "strongBuy": 14,
+        "strongSell": 0,
+        "symbol": "AAPL"
+      },
+      {
+        "buy": 27,
+        "hold": 12,
+        "period": "2024-11-01",
+        "sell": 2,
+        "strongBuy": 13,
+        "strongSell": 0,
+        "symbol": "AAPL"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739352668,
+        "headline": "Research Shows Warning Signs For Apple",
+        "id": 132679657,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1481144868/image_1481144868.jpg?io=getty-c-w1536",
+        "related": "AAPL",
+        "source": "SeekingAlpha",
+        "summary": "Apple Inc. faces risks in a high P/E market with large debt exposure, predicting a -6.5% dip in downturns. Click for our updated view of AAPL stock post earnings.",
+        "url": "https://finnhub.io/api/news?id=507e0e17abf5a4de9f843c308620a1f072c7b0821e85dd09c88d8a2310037ede"
+      },
+      {
+        "category": "company",
+        "datetime": 1739338920,
+        "headline": "Chinese Battery Giant CATL Applies for Hong Kong Listing",
+        "id": 132678217,
+        "image": "https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+        "related": "AAPL",
+        "source": "Yahoo",
+        "summary": "The world\u2019s largest maker of EV batteries has applied for a secondary listing in Hong Kong, joining the ranks of Chinese companies looking to tap the city\u2019s fundraising markets.",
+        "url": "https://finnhub.io/api/news?id=69be8533184445976ddb865456d6d8b612e5ac3c1455bc0b1e8eba6d5ebf5670"
+      },
+      {
+        "category": "company",
+        "datetime": 1739338140,
+        "headline": "Alibaba Shares Surge After Progress in Apple Partnership",
+        "id": 132678218,
+        "image": "https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+        "related": "AAPL",
+        "source": "Yahoo",
+        "summary": "Alibaba\u2019s shares surged as the e-commerce giant made progress in its partnership with Apple to roll out artificial-intelligence features in China.",
+        "url": "https://finnhub.io/api/news?id=761f2a7a681094221078cf107fb8d189a601c2946406f34213fa74057767960c"
+      },
+      {
+        "category": "company",
+        "datetime": 1739334657,
+        "headline": "Apple: Slow Growth, High Valuation",
+        "id": 132678647,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2171462566/image_2171462566.jpg?io=getty-c-w1536",
+        "related": "AAPL",
+        "source": "SeekingAlpha",
+        "summary": "Apple\u00e2\u0080\u0099s Services segment achieved a record in revenue in Q1'25. Read why Google and Meta Platforms are better picks for investors than AAPL stock.",
+        "url": "https://finnhub.io/api/news?id=0b3573c4dd0c21dc72e732907433d40216c602f941fe0537412307e7595371c2"
+      },
+      {
+        "category": "company",
+        "datetime": 1739332800,
+        "headline": "America\u2019s Most Famous Stock-Market Measure Is More Broken Than Usual",
+        "id": 132678219,
+        "image": "https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+        "related": "AAPL",
+        "source": "Yahoo",
+        "summary": "The Dow Jones Industrial Average draws outsize attention, presenting a distorted picture of what\u2019s going on with stocks.",
+        "url": "https://finnhub.io/api/news?id=e58f2de57a61cc41664a5fd6ddf0751c189c0538bae1dc6f29bbd6c147454252"
+      },
+      {
+        "category": "company",
+        "datetime": 1739328474,
+        "headline": "Alibaba\u2019s Shares Soar After Investors Buy iPhone AI Hopes",
+        "id": 132678220,
+        "image": "https://s.yimg.com/ny/api/res/1.2/6.qhIcStvt2ANhrCi3VfjA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://media.zenfs.com/en/bloomberg_markets_842/2371d717b0084379a5c3851b6878ff2a",
+        "related": "AAPL",
+        "source": "Yahoo",
+        "summary": "(Bloomberg) -- Alibaba Group Holding Ltd.\u2019s stock surged as much as 8.6% after the Information reported that Apple Inc. is working with the e-commerce pioneer to roll out artificial intelligence features in China. Most Read from BloombergSaudi Arabia\u2019s Neom Signs $5 Billion Deal for AI Data CenterNice Airport, If You Can Get to It: No Subway, No Highway, No BridgeSin puente y sin metro: el nuevo aeropuerto de Lima es una debacleThe Forgotten French Architect Who Rebuilt MarseilleIn New Orleans,",
+        "url": "https://finnhub.io/api/news?id=66273ec8522616bb4209f583ce129b02c39994722728db042a175245ffcc8c50"
+      },
+      {
+        "category": "company",
+        "datetime": 1739326740,
+        "headline": "China\u2019s Xi Is Building Economic Fortress Against U.S. Pressure",
+        "id": 132678221,
+        "image": "https://media.zenfs.com/en/wsj.com/7b2c285183be07ca3c4e8242b25a59a8",
+        "related": "AAPL",
+        "source": "Yahoo",
+        "summary": "As President Trump turns up the heat on Beijing, China is trying to become more technologically self-sufficient, but its efforts have a significant cost.",
+        "url": "https://finnhub.io/api/news?id=fceab13cc9a0092166326dcd669e9a7fd64aba87521317215f6b41d9bcfe5298"
+      },
+      {
+        "category": "company",
+        "datetime": 1739326200,
+        "headline": "Fidelity Growth Company Fund Q4 2024 Review",
+        "id": 132678237,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1562199023/image_1562199023.jpg?io=getty-c-w1536",
+        "related": "AAPL",
+        "source": "SeekingAlpha",
+        "summary": "For Q4 2024, Fidelity Growth Company Fund's Retail Class (FDGRX) shares gained 7.52%, outpacing the benchmark.Click here to read the full commentary. ",
+        "url": "https://finnhub.io/api/news?id=dfb0f15a0b3745e674ebc58df7cd875465346341698746e1ce11df135f749273"
+      }
+    ]
+  },
+  "MSFT": {
+    "recommendation_trends": [
+      {
+        "buy": 37,
+        "hold": 6,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 22,
+        "strongSell": 0,
+        "symbol": "MSFT"
+      },
+      {
+        "buy": 38,
+        "hold": 5,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 22,
+        "strongSell": 0,
+        "symbol": "MSFT"
+      },
+      {
+        "buy": 38,
+        "hold": 5,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 22,
+        "strongSell": 0,
+        "symbol": "MSFT"
+      },
+      {
+        "buy": 37,
+        "hold": 5,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 22,
+        "strongSell": 0,
+        "symbol": "MSFT"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739326200,
+        "headline": "Fidelity Growth Company Fund Q4 2024 Review",
+        "id": 132678237,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1562199023/image_1562199023.jpg?io=getty-c-w1536",
+        "related": "MSFT",
+        "source": "SeekingAlpha",
+        "summary": "For Q4 2024, Fidelity Growth Company Fund's Retail Class (FDGRX) shares gained 7.52%, outpacing the benchmark.Click here to read the full commentary. ",
+        "url": "https://finnhub.io/api/news?id=dfb0f15a0b3745e674ebc58df7cd875465346341698746e1ce11df135f749273"
+      }
+    ]
+  },
+  "GOOGL": {
+    "recommendation_trends": [
+      {
+        "buy": 35,
+        "hold": 13,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 18,
+        "strongSell": 0,
+        "symbol": "GOOGL"
+      },
+      {
+        "buy": 36,
+        "hold": 12,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 18,
+        "strongSell": 0,
+        "symbol": "GOOGL"
+      },
+      {
+        "buy": 35,
+        "hold": 12,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 18,
+        "strongSell": 0,
+        "symbol": "GOOGL"
+      },
+      {
+        "buy": 35,
+        "hold": 12,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 18,
+        "strongSell": 0,
+        "symbol": "GOOGL"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739342927,
+        "headline": "Alphabet Is Closing The Gap With Google Cloud",
+        "id": 132679095,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1924409969/image_1924409969.jpg?io=getty-c-w1536",
+        "related": "GOOGL",
+        "source": "SeekingAlpha",
+        "summary": "Google Cloud's revenue grew 30% YoY in Q4'24 with margins up to 17.51%, driven by AI advancements. Discover their $75B expansion plans for eFY25.",
+        "url": "https://finnhub.io/api/news?id=cad293ef88a19a8f8bd286e9720e83d15d3807a615a42771235ebceee6a245ea"
+      },
+      {
+        "category": "company",
+        "datetime": 1739337375,
+        "headline": "Alphabet: Thank You For The Drop",
+        "id": 132678798,
+        "image": "",
+        "related": "GOOGL",
+        "source": "SeekingAlpha",
+        "summary": "",
+        "url": "https://finnhub.io/api/news?id=62f27715235cbc8283b509de6f2970d55a0997a3335cb01db257d2dca43c75ec"
+      }
+    ]
+  },
+  "AMZN": {
+    "recommendation_trends": [
+      {
+        "buy": 52,
+        "hold": 5,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 21,
+        "strongSell": 0,
+        "symbol": "AMZN"
+      },
+      {
+        "buy": 52,
+        "hold": 5,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 21,
+        "strongSell": 0,
+        "symbol": "AMZN"
+      },
+      {
+        "buy": 50,
+        "hold": 5,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 21,
+        "strongSell": 0,
+        "symbol": "AMZN"
+      },
+      {
+        "buy": 48,
+        "hold": 5,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 21,
+        "strongSell": 0,
+        "symbol": "AMZN"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739352600,
+        "headline": "Amazon Remains Cheap Despite Mega-Cap Status - Growth Drivers Deliver Rich Prospects",
+        "id": 132679659,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2197648473/image_2197648473.jpg?io=getty-c-w1536",
+        "related": "AMZN",
+        "source": "SeekingAlpha",
+        "summary": "Much of Amazon's tailwinds are attributed to the robust AWS prospects during the next cloud super cycle. Read why AMZN stock remains compelling.",
+        "url": "https://finnhub.io/api/news?id=b016addea38e6eab6e1446ffcc4d66954244817d9c08a5cc3ce1f2d73510416e"
+      },
+      {
+        "category": "company",
+        "datetime": 1739349000,
+        "headline": "Amazon: It's Simple. Let Your Winners Run",
+        "id": 132679414,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2047476386/image_2047476386.jpg?io=getty-c-w1536",
+        "related": "AMZN",
+        "source": "SeekingAlpha",
+        "summary": "Amazon isn't going to allow its arch rivals to dominate the headlines for AI investment.",
+        "url": "https://finnhub.io/api/news?id=0fc5c1cdfcde5e46fd6132c640809bc344a837d7d3efe8afc64d673976c14cf9"
+      },
+      {
+        "category": "company",
+        "datetime": 1739341407,
+        "headline": "Wall Street Breakfast Podcast: Super Micro Gains On Preliminary Q2 Report",
+        "id": 132679041,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2153472557/image_2153472557.jpg?io=getty-c-w1536",
+        "related": "AMZN",
+        "source": "SeekingAlpha",
+        "summary": "Super Micro offers up prelim Q2 results, $700M private placement. Amazon to open first brick-and-mortar beauty, health store in Italy. Netflix opens up a restaurant on the Las Vegas Strip.",
+        "url": "https://finnhub.io/api/news?id=50ea1864a566a4bb6d9bc760a056e39abacac1a29d980e670cb6ccb635153758"
+      },
+      {
+        "category": "company",
+        "datetime": 1739333600,
+        "headline": "Amazon Stock: Still A Compelling Buy Despite Trading Near All-Time Highs",
+        "id": 132678618,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1317474419/image_1317474419.jpg?io=getty-c-w1536",
+        "related": "AMZN",
+        "source": "SeekingAlpha",
+        "summary": "Amazon's diverse revenue streams show robust growth, with AWS leading at 19% YoY. Read why I reiterate my buy rating for AMZN stock.",
+        "url": "https://finnhub.io/api/news?id=54ce3815dfe72140dcbdb2c87b2d6227f8aec64af25ad970c74c85ce4b99e3d0"
+      },
+      {
+        "category": "company",
+        "datetime": 1739326200,
+        "headline": "Fidelity Growth Company Fund Q4 2024 Review",
+        "id": 132678237,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1562199023/image_1562199023.jpg?io=getty-c-w1536",
+        "related": "AMZN",
+        "source": "SeekingAlpha",
+        "summary": "For Q4 2024, Fidelity Growth Company Fund's Retail Class (FDGRX) shares gained 7.52%, outpacing the benchmark.Click here to read the full commentary. ",
+        "url": "https://finnhub.io/api/news?id=dfb0f15a0b3745e674ebc58df7cd875465346341698746e1ce11df135f749273"
+      }
+    ]
+  },
+  "TSLA": {
+    "recommendation_trends": [
+      {
+        "buy": 19,
+        "hold": 17,
+        "period": "2025-02-01",
+        "sell": 9,
+        "strongBuy": 9,
+        "strongSell": 4,
+        "symbol": "TSLA"
+      },
+      {
+        "buy": 19,
+        "hold": 17,
+        "period": "2025-01-01",
+        "sell": 9,
+        "strongBuy": 10,
+        "strongSell": 5,
+        "symbol": "TSLA"
+      },
+      {
+        "buy": 18,
+        "hold": 19,
+        "period": "2024-12-01",
+        "sell": 9,
+        "strongBuy": 10,
+        "strongSell": 4,
+        "symbol": "TSLA"
+      },
+      {
+        "buy": 17,
+        "hold": 21,
+        "period": "2024-11-01",
+        "sell": 8,
+        "strongBuy": 10,
+        "strongSell": 4,
+        "symbol": "TSLA"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739350800,
+        "headline": "Tesla: Celebrating 40 Months Of Nothing (Technical Analysis, Rating Downgrade)",
+        "id": 132679535,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2124191987/image_2124191987.jpg?io=getty-c-w1536",
+        "related": "TSLA",
+        "source": "SeekingAlpha",
+        "summary": "Tesla, Inc.'s wild ride since 2021 signals more risk than reward. Click here to read why this TSLA stock may not be right for you.",
+        "url": "https://finnhub.io/api/news?id=c46a474c7fae34b6760ad7042c82a9c5c17e63f1e9f0f178ece9537363913431"
+      },
+      {
+        "category": "company",
+        "datetime": 1739326200,
+        "headline": "Fidelity Growth Company Fund Q4 2024 Review",
+        "id": 132678237,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1562199023/image_1562199023.jpg?io=getty-c-w1536",
+        "related": "TSLA",
+        "source": "SeekingAlpha",
+        "summary": "For Q4 2024, Fidelity Growth Company Fund's Retail Class (FDGRX) shares gained 7.52%, outpacing the benchmark.Click here to read the full commentary. ",
+        "url": "https://finnhub.io/api/news?id=dfb0f15a0b3745e674ebc58df7cd875465346341698746e1ce11df135f749273"
+      }
+    ]
+  },
+  "META": {
+    "recommendation_trends": [
+      {
+        "buy": 45,
+        "hold": 8,
+        "period": "2025-02-01",
+        "sell": 2,
+        "strongBuy": 23,
+        "strongSell": 0,
+        "symbol": "META"
+      },
+      {
+        "buy": 44,
+        "hold": 9,
+        "period": "2025-01-01",
+        "sell": 2,
+        "strongBuy": 23,
+        "strongSell": 0,
+        "symbol": "META"
+      },
+      {
+        "buy": 42,
+        "hold": 8,
+        "period": "2024-12-01",
+        "sell": 2,
+        "strongBuy": 24,
+        "strongSell": 0,
+        "symbol": "META"
+      },
+      {
+        "buy": 42,
+        "hold": 8,
+        "period": "2024-11-01",
+        "sell": 2,
+        "strongBuy": 24,
+        "strongSell": 0,
+        "symbol": "META"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739337375,
+        "headline": "Alphabet: Thank You For The Drop",
+        "id": 132678798,
+        "image": "",
+        "related": "META",
+        "source": "SeekingAlpha",
+        "summary": "",
+        "url": "https://finnhub.io/api/news?id=62f27715235cbc8283b509de6f2970d55a0997a3335cb01db257d2dca43c75ec"
+      },
+      {
+        "category": "company",
+        "datetime": 1739329200,
+        "headline": "Meta: DeepSeek's Ripple Effect Stops At Valuation",
+        "id": 132678356,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2196139559/image_2196139559.jpg?io=getty-c-w1536",
+        "related": "META",
+        "source": "SeekingAlpha",
+        "summary": "Meta\u00e2\u0080\u0099s AI-driven ad strategy is creating a powerful feedback loop, enhancing user engagement. Read why we are issuing META stock a Hold rating for now.",
+        "url": "https://finnhub.io/api/news?id=a86937ed6c4f51cc25925c712f5af143b8318e791087a2d012cb76d37668735a"
+      }
+    ]
+  },
+  "NFLX": {
+    "recommendation_trends": [
+      {
+        "buy": 25,
+        "hold": 14,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 15,
+        "strongSell": 0,
+        "symbol": "NFLX"
+      },
+      {
+        "buy": 24,
+        "hold": 15,
+        "period": "2025-01-01",
+        "sell": 3,
+        "strongBuy": 13,
+        "strongSell": 0,
+        "symbol": "NFLX"
+      },
+      {
+        "buy": 25,
+        "hold": 15,
+        "period": "2024-12-01",
+        "sell": 2,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "NFLX"
+      },
+      {
+        "buy": 26,
+        "hold": 14,
+        "period": "2024-11-01",
+        "sell": 2,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "NFLX"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739350460,
+        "headline": "Netflix: We Were Wrong--Here's Why It Still Has 26% Upside (Rating Upgrade)",
+        "id": 132679505,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/939567088/image_939567088.jpg?io=getty-c-w1536",
+        "related": "NFLX",
+        "source": "SeekingAlpha",
+        "summary": "Netflix benefits from shift to DTC media, sports pivot, and content rationalization, driving revenue and free cash growth. See why we're turning bullish on NFLX.",
+        "url": "https://finnhub.io/api/news?id=680c1fdb10dc083d0f7f27daf3adcd5bdf679a56b2c41aa820cc7be54cb2c9ac"
+      },
+      {
+        "category": "company",
+        "datetime": 1739341407,
+        "headline": "Wall Street Breakfast Podcast: Super Micro Gains On Preliminary Q2 Report",
+        "id": 132679041,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/2153472557/image_2153472557.jpg?io=getty-c-w1536",
+        "related": "NFLX",
+        "source": "SeekingAlpha",
+        "summary": "Super Micro offers up prelim Q2 results, $700M private placement. Amazon to open first brick-and-mortar beauty, health store in Italy. Netflix opens up a restaurant on the Las Vegas Strip.",
+        "url": "https://finnhub.io/api/news?id=50ea1864a566a4bb6d9bc760a056e39abacac1a29d980e670cb6ccb635153758"
+      }
+    ]
+  },
+  "NVDA": {
+    "recommendation_trends": [
+      {
+        "buy": 38,
+        "hold": 7,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 24,
+        "strongSell": 0,
+        "symbol": "NVDA"
+      },
+      {
+        "buy": 40,
+        "hold": 7,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 24,
+        "strongSell": 0,
+        "symbol": "NVDA"
+      },
+      {
+        "buy": 40,
+        "hold": 7,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 23,
+        "strongSell": 0,
+        "symbol": "NVDA"
+      },
+      {
+        "buy": 39,
+        "hold": 7,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 23,
+        "strongSell": 0,
+        "symbol": "NVDA"
+      }
+    ],
+    "company_news": [
+      {
+        "category": "company",
+        "datetime": 1739345400,
+        "headline": "Nvidia: Path To $5 Trillion+ Market Cap",
+        "id": 132679256,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/636081364/image_636081364.jpg?io=getty-c-w1536",
+        "related": "NVDA",
+        "source": "SeekingAlpha",
+        "summary": "Nvidia's robust R&D spending and strong balance sheet ensure it stays way ahead of the main competitor, AMD. Read why I remain very bullish on NVDA stock.",
+        "url": "https://finnhub.io/api/news?id=6a9b9582225a186c89aa503b944c8009aec9164f82059387e418358e46275a10"
+      },
+      {
+        "category": "company",
+        "datetime": 1739341800,
+        "headline": "Reviewing Winners And Losers Since The DeepSeek Shock Blindsided Markets",
+        "id": 132679035,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1270408788/image_1270408788.jpg?io=getty-c-w1536",
+        "related": "NVDA",
+        "source": "SeekingAlpha",
+        "summary": "The panic-selling on January 27 has faded and share prices recovered. But the aftershock lingers as investors reassess the outlook for AI and the companies that stand to benefit from it.",
+        "url": "https://finnhub.io/api/news?id=3d26b5bf413fb20188f2913aab13913238e5f0747a328540ab01895b4423fafa"
+      },
+      {
+        "category": "company",
+        "datetime": 1739333384,
+        "headline": "Super Micro Computer: Stellar FY2026 Sales Projection Could Prove Overly Ambitious - Sell",
+        "id": 132678619,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1976099664/image_1976099664.jpg?io=getty-c-w1536",
+        "related": "NVDA",
+        "source": "SeekingAlpha",
+        "summary": "Super Micro Computer's FY2025 outlook falters with Nvidia GPU supply issues, yet FY2026 revenue guidance sparks optimism. See more on SMCI stock here.",
+        "url": "https://finnhub.io/api/news?id=4e1bc3e931df2197fe39317684ea888033ab58334851dd211f2501a4e6be6f95"
+      },
+      {
+        "category": "company",
+        "datetime": 1739326200,
+        "headline": "Fidelity Growth Company Fund Q4 2024 Review",
+        "id": 132678237,
+        "image": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1562199023/image_1562199023.jpg?io=getty-c-w1536",
+        "related": "NVDA",
+        "source": "SeekingAlpha",
+        "summary": "For Q4 2024, Fidelity Growth Company Fund's Retail Class (FDGRX) shares gained 7.52%, outpacing the benchmark.Click here to read the full commentary. ",
+        "url": "https://finnhub.io/api/news?id=dfb0f15a0b3745e674ebc58df7cd875465346341698746e1ce11df135f749273"
+      }
+    ]
+  },
+  "BRK.B": {
+    "recommendation_trends": [
+      {
+        "buy": 5,
+        "hold": 3,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 3,
+        "strongSell": 0,
+        "symbol": "BRK.A"
+      },
+      {
+        "buy": 5,
+        "hold": 3,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 3,
+        "strongSell": 0,
+        "symbol": "BRK.A"
+      },
+      {
+        "buy": 5,
+        "hold": 3,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 3,
+        "strongSell": 0,
+        "symbol": "BRK.A"
+      },
+      {
+        "buy": 5,
+        "hold": 3,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 3,
+        "strongSell": 0,
+        "symbol": "BRK.A"
+      }
+    ],
+    "company_news": []
+  },
+  "JPM": {
+    "recommendation_trends": [
+      {
+        "buy": 13,
+        "hold": 10,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 4,
+        "strongSell": 1,
+        "symbol": "JPM"
+      },
+      {
+        "buy": 14,
+        "hold": 10,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 3,
+        "strongSell": 1,
+        "symbol": "JPM"
+      },
+      {
+        "buy": 14,
+        "hold": 10,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 3,
+        "strongSell": 1,
+        "symbol": "JPM"
+      },
+      {
+        "buy": 14,
+        "hold": 10,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 4,
+        "strongSell": 0,
+        "symbol": "JPM"
+      }
+    ],
+    "company_news": []
+  },
+  "V": {
+    "recommendation_trends": [
+      {
+        "buy": 28,
+        "hold": 7,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "V"
+      },
+      {
+        "buy": 27,
+        "hold": 8,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 13,
+        "strongSell": 0,
+        "symbol": "V"
+      },
+      {
+        "buy": 26,
+        "hold": 9,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 13,
+        "strongSell": 0,
+        "symbol": "V"
+      },
+      {
+        "buy": 26,
+        "hold": 9,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 13,
+        "strongSell": 0,
+        "symbol": "V"
+      }
+    ],
+    "company_news": []
+  },
+  "UNH": {
+    "recommendation_trends": [
+      {
+        "buy": 19,
+        "hold": 3,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "UNH"
+      },
+      {
+        "buy": 17,
+        "hold": 5,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "UNH"
+      },
+      {
+        "buy": 17,
+        "hold": 5,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "UNH"
+      },
+      {
+        "buy": 18,
+        "hold": 4,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 12,
+        "strongSell": 0,
+        "symbol": "UNH"
+      }
+    ],
+    "company_news": []
+  },
+  "HD": {
+    "recommendation_trends": [
+      {
+        "buy": 22,
+        "hold": 12,
+        "period": "2025-02-01",
+        "sell": 1,
+        "strongBuy": 12,
+        "strongSell": 1,
+        "symbol": "HD"
+      },
+      {
+        "buy": 23,
+        "hold": 12,
+        "period": "2025-01-01",
+        "sell": 1,
+        "strongBuy": 12,
+        "strongSell": 1,
+        "symbol": "HD"
+      },
+      {
+        "buy": 23,
+        "hold": 12,
+        "period": "2024-12-01",
+        "sell": 1,
+        "strongBuy": 12,
+        "strongSell": 1,
+        "symbol": "HD"
+      },
+      {
+        "buy": 21,
+        "hold": 14,
+        "period": "2024-11-01",
+        "sell": 1,
+        "strongBuy": 12,
+        "strongSell": 1,
+        "symbol": "HD"
+      }
+    ],
+    "company_news": []
+  },
+  "PG": {
+    "recommendation_trends": [
+      {
+        "buy": 19,
+        "hold": 11,
+        "period": "2025-02-01",
+        "sell": 0,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "PG"
+      },
+      {
+        "buy": 18,
+        "hold": 12,
+        "period": "2025-01-01",
+        "sell": 0,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "PG"
+      },
+      {
+        "buy": 18,
+        "hold": 12,
+        "period": "2024-12-01",
+        "sell": 0,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "PG"
+      },
+      {
+        "buy": 17,
+        "hold": 13,
+        "period": "2024-11-01",
+        "sell": 0,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "PG"
+      }
+    ],
+    "company_news": []
+  },
+  "DIS": {
+    "recommendation_trends": [
+      {
+        "buy": 19,
+        "hold": 10,
+        "period": "2025-02-01",
+        "sell": 1,
+        "strongBuy": 8,
+        "strongSell": 0,
+        "symbol": "DIS"
+      },
+      {
+        "buy": 20,
+        "hold": 11,
+        "period": "2025-01-01",
+        "sell": 1,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "DIS"
+      },
+      {
+        "buy": 19,
+        "hold": 11,
+        "period": "2024-12-01",
+        "sell": 1,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "DIS"
+      },
+      {
+        "buy": 19,
+        "hold": 11,
+        "period": "2024-11-01",
+        "sell": 1,
+        "strongBuy": 7,
+        "strongSell": 0,
+        "symbol": "DIS"
+      }
+    ],
+    "company_news": []
+  }
+}
