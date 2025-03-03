@@ -1,1 +1,5 @@
 flask
+google-genai
+pydantic
+flask-cors
+requests
