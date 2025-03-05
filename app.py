@@ -1,7 +1,6 @@
 from flask import Flask, request
-from ai import get_recommendations
+from ai import get_recommendations, getTickers
 import json, flask_cors
-import json
 import datetime
 from services.finnhub_service import get_recommendation_trends, get_company_news
 
@@ -19,13 +18,16 @@ def hello_world():
 @app.route('/description', methods=['POST'])
 @flask_cors.cross_origin()
 def description():
-    print(request.get_json())
     request_data = request.get_json()
     description = request_data['description']
     return process_description(description)
     
 def process_description(description):
-    return get_recommendations(description, gemini_key).text
+    tickers = getTickers(gemini_key, description).parsed
+    tickers = [ticker.symbol for ticker in tickers]
+    data = getFinnhubData(tickers)
+    descriptions = get_recommendations(gemini_key, description, tickers, data)
+    return descriptions.text
 
 def getFinnhubData(stocks:list):
     
@@ -58,4 +60,4 @@ def getFinnhubData(stocks:list):
     return all_stock_data
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True, host='0.0.0.0')
+    app.run(port=5000, host='0.0.0.0', debug=True)
