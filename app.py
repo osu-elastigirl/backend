@@ -1,26 +1,35 @@
-import json
+from flask import Flask, request
+from ai import get_recommendations, getTickers
+import json, flask_cors
 import datetime
 from services.finnhub_service import get_recommendation_trends, get_company_news
 
-def main():
-    # List of stocks you want to process.
-    stocks = [
-        "AAPL",   # Apple Inc.
-        "MSFT",   # Microsoft Corporation
-        "GOOGL",  # Alphabet Inc.
-        "AMZN",   # Amazon.com, Inc.
-        "TSLA",   # Tesla, Inc.
-        "META",   # Meta Platforms, Inc.
-        "NFLX",   # Netflix, Inc.
-        "NVDA",   # NVIDIA Corporation
-        "BRK.B",  # Berkshire Hathaway Inc. (Class B)
-        "JPM",    # JPMorgan Chase & Co.
-        "V",      # Visa Inc.
-        "UNH",    # UnitedHealth Group Incorporated
-        "HD",     # The Home Depot, Inc.
-        "PG",     # The Procter & Gamble Company
-        "DIS"     # The Walt Disney Company
-    ]
+flask_cors.logging.getLogger('flask_cors').level = flask_cors.logging.DEBUG
+
+app = Flask(__name__)
+cors = flask_cors.CORS(app, resources={r"/api/*": {"origins": "*", "allow_headers": "*", "expose_headers": "*"}})
+gemini_key = json.load(open('config.json'))['gemini_key']
+
+@app.route('/')
+def hello_world():
+    print('Hello, World!')
+    return 'Hello, World!'
+
+@app.route('/description', methods=['POST'])
+@flask_cors.cross_origin()
+def description():
+    request_data = request.get_json()
+    description = request_data['description']
+    return process_description(description)
+    
+def process_description(description):
+    tickers = getTickers(gemini_key, description).parsed
+    tickers = [ticker.symbol for ticker in tickers]
+    data = getFinnhubData(tickers)
+    descriptions = get_recommendations(gemini_key, description, tickers, data)
+    return descriptions.text
+
+def getFinnhubData(stocks:list):
     
     # Use today's date for the news; format: YYYY-MM-DD.
     today = datetime.date.today().strftime("%Y-%m-%d")
@@ -47,13 +56,8 @@ def main():
             "recommendation_trends": rec_trends,
             "company_news": news
         }
-    
-    # Write the data to a JSON file with pretty printing.
-    output_filename = "stocks_data.json"
-    with open(output_filename, "w") as f:
-        json.dump(all_stock_data, f, indent=2)
-    
-    print(f"Data has been saved to {output_filename}")
+        
+    return all_stock_data
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    app.run(port=5000, host='0.0.0.0', debug=True)
