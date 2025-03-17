@@ -1,0 +1,261 @@
+Documentation for Using data analytics scripts
+
+Basic Company Info Scripts:
+
+  company_info.py
+    
+    Given a ticker, this script will return a JSON file that holds the basic company information
+    somone might want to know. Below is the json format and the items that are in basic company
+    infromation. This will be added directly to ElasticSearch and only needs to be called once for 
+    each company.
+
+    Example "AAPL":
+    {
+      "AAPL": {
+          "basic_company_info": {
+              "name": "Apple Inc.",
+              "description": "Apple Inc. designs, ... ... and is headquartered in Cupertino, California.",
+              "sector": "Technology",
+              "industry": "Consumer Electronics",
+              "location": "Cupertino",
+              "country": "United States",
+              "founded_year": "N/A",
+              "website": "https://www.apple.com"
+            }
+        }
+    }
+
+Price scripts:
+  
+  This script just returns the most recent closing price of a stock. This is used in many of the ratios and 
+  techinal indicator. Also this would be good to display on the website. 
+
+  stock_price.py 
+    returns float stock price  
+
+
+
+
+Fundamental Metrics scripts:
+
+  These are going to use the financial statments to calculate many of the common ratios used for evaluating stocks
+  This will output a json file that can be sotred in elasticsearch for later use. Only should be done once for 
+  new data.
+
+  fundamental_metrics.py 
+
+    will return json with info
+    WORKING ON IT
+
+Technical Metric scripts:
+
+  This is also going to output a json that could be ingested into elastic search. This is encompass technical analysis
+  metrics just as beta, moving averages, RSI... Although this can be ingested into elastic search, this information
+  changes on a more frequent basis. Is there a better way of handling it.
+
+  technical_metrics.py 
+
+    will return json with info
+    WORKING ON IT
+
+Financial statement scripts: 
+
+  There are three scripts for each of the finanial statments a company releases.
+  Using each of these scripts with the ticker and the item we wish to fetch, we can get the most recent
+  items. These items are not gaurnteed to be listed on all companies, if so the scirpts will return "N/A"
+  If the items does exists it will return a float value of the item. We must then check that this does
+  not return N/A if we are calling it. For now all the information is fetched form quarterly reports.
+  For income statements and cash flow statments the values are generally a summation of the each of the listed 
+  values for the last 4 quarters poseted. Thus these values are TTM (trailing 12 months) and are the most 
+  accurate depiction of how the company is doing. Balance sheet is just a singular value that depicts a 
+  snapshot in time therefore there are no TTM or AVG values.
+
+  I hope to possibly implemenent scripts that go over annual reports and get a moving avereage of larger 
+  metrics like revenue, debt, cash flows. Using matplotlib we could also give these metrics grahpical 
+  representaiton.
+
+  income_statement.py
+
+    Items on income statement (USE EXACT STRING BELOW FOR 2ND ARG):
+
+      Tax Effect Of Unusual Items
+      Tax Rate For Calcs
+      Normalized EBITDA
+      Total Unusual Items
+      Total Unusual Items Excluding Goodwill
+      Net Income From Continuing Operation Net Minority Interest
+      Reconciled Depreciation
+      Reconciled Cost Of Revenue
+      EBITDA
+      EBIT
+      Net Interest Income
+      Interest Expense
+      Normalized Income
+      Net Income From Continuing And Discontinued Operation
+      Total Expenses
+      Total Operating Income As Reported
+      Diluted Average Shares 
+      Basic Average Shares 
+      Diluted EPS 
+      Basic EPS 
+      Diluted NI Availto Com Stockholders
+      Average Dilution Earnings
+      Net Income Common Stockholders
+      Otherunder Preferred Stock Dividend
+      Net Income
+      Net Income Including Noncontrolling Interests
+      Net Income Discontinuous Operations
+      Net Income Continuous Operations
+      Tax Provision
+      Pretax Income
+      Other Income Expense
+      Other Non Operating Income Expenses
+      Special Income Charges
+      Write Off
+      Net Non Operating Interest Income Expense
+      Interest Expense Non Operating
+      Operating Income
+      Operating Expense
+      Depreciation Amortization Depletion Income Statement
+      Depreciation And Amortization In Income Statement
+      Selling General And Administration
+      Gross Profit
+      Cost Of Revenue
+      Total Revenue
+      Operating Revenue
+
+  balance_sheet.py
+
+    Items on balance sheet (USE EXACT STRING BELOW FOR 2ND ARG):
+
+      Treasury Shares Number
+      Ordinary Shares Number
+      Share Issued
+      Net Debt
+      Total Debt
+      Tangible Book Value
+      Invested Capital
+      Working Capital
+      Net Tangible Assets
+      Capital Lease Obligations
+      Common Stock Equity
+      Total Capitalization
+      Total Equity Gross Minority Interest
+      Stockholders Equity
+      Gains Losses Not Affecting Retained Earnings
+      Other Equity Adjustments
+      Retained Earnings
+      Capital Stock
+      Common Stock
+      Total Liabilities Net Minority Interest
+      Total Non Current Liabilities Net Minority Interest
+      Other Non Current Liabilities
+      Tradeand Other Payables Non Current
+      Long Term Debt And Capital Lease Obligation
+      Long Term Capital Lease Obligation
+      Long Term Debt
+      Current Liabilities
+      Other Current Liabilities
+      Current Deferred Liabilities
+      Current Deferred Revenue
+      Current Debt And Capital Lease Obligation
+      Current Capital Lease Obligation
+      Current Debt
+      Other Current Borrowings
+      Commercial Paper
+      Payables And Accrued Expenses
+      Payables
+      Total Tax Payable
+      Income Tax Payable
+      Accounts Payable
+      Total Assets
+      Total Non Current Assets
+      Other Non Current Assets
+      Non Current Deferred Assets
+      Non Current Deferred Taxes Assets
+      Investments And Advances
+      Investmentin Financial Assets
+      Available For Sale Securities
+      Net PPE
+      Accumulated Depreciation
+      Gross PPE
+      Leases
+      Other Properties
+      Machinery Furniture Equipment
+      Land And Improvements
+      Properties
+      Current Assets
+      Other Current Assets
+      Inventory
+      Finished Goods
+      Raw Materials
+      Receivables
+      Other Receivables
+      Accounts Receivable
+      Cash Cash Equivalents And Short Term Investments
+      Other Short Term Investments
+      Cash And Cash Equivalents
+      Cash Equivalents
+      Cash Financial
+
+  cash_flow_statement.py
+
+    Items on cash flow statement (USE EXACT STRING BELOW FOR 2ND ARG):
+
+      Free Cash Flow
+      Repurchase Of Capital Stock
+      Repayment Of Debt
+      Issuance Of Debt
+      Capital Expenditure
+      End Cash Position
+      Beginning Cash Position
+      Effect Of Exchange Rate Changes
+      Changes In Cash
+      Financing Cash Flow
+      Cash Flow From Continuing Financing Activities
+      Net Other Financing Charges
+      Proceeds From Stock Option Exercised
+      Cash Dividends Paid
+      Common Stock Dividend Paid
+      Net Common Stock Issuance
+      Common Stock Payments
+      Net Issuance Payments Of Debt
+      Net Short Term Debt Issuance
+      Short Term Debt Payments
+      Short Term Debt Issuance
+      Net Long Term Debt Issuance
+      Long Term Debt Payments
+      Long Term Debt Issuance
+      Investing Cash Flow
+      Cash From Discontinued Investing Activities
+      Cash Flow From Continuing Investing Activities
+      Net Other Investing Changes
+      Net Business Purchase And Sale
+      Purchase Of Business
+      Net PPE Purchase And Sale
+      Sale Of PPE
+      Purchase Of PPE
+      Operating Cash Flow
+      Cash Flow From Continuing Operating Activities
+      Change In Working Capital
+      Change In Other Working Capital
+      Change In Other Current Liabilities
+      Change In Payables And Accrued Expense
+      Change In Payable
+      Change In Account Payable
+      Change In Prepaid Assets
+      Change In Inventory
+      Change In Receivables
+      Changes In Account Receivables
+      Other Non Cash Items
+      Stock Based Compensation
+      Asset Impairment Charge
+      Deferred Tax
+      Deferred Income Tax
+      Depreciation Amortization Depletion
+      Depreciation And Amortization
+      Operating Gains Losses
+      Gain Loss On Investment Securities
+      Net Income From Continuing Operations
+
+
