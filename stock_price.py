@@ -8,5 +8,3 @@ def fetch(ticker):
     return "N/A"  
   return float(prices['Close'][0])
 
-print(fetch("AAPL"))
-

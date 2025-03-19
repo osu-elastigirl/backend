@@ -9,6 +9,8 @@ Basic Company Info Scripts:
     infromation. This will be added directly to ElasticSearch and only needs to be called once for 
     each company.
 
+    fetch_company_info(ticker)
+
     Example "AAPL":
     {
       "AAPL": {
