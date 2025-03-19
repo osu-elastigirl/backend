@@ -3,3 +3,4 @@ google-genai
 pydantic
 flask-cors
 requests
+yfinance
