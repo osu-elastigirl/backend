@@ -84,7 +84,7 @@ Financial statement scripts:
       Tax Rate For Calcs
       Normalized EBITDA
       Total Unusual Items
-      Total Unusual Items Excluding Goodwill
+fundamental_metrics.py      Total Unusual Items Excluding Goodwill
       Net Income From Continuing Operation Net Minority Interest
       Reconciled Depreciation
       Reconciled Cost Of Revenue
