@@ -2,6 +2,8 @@ import income_statement
 import balance_sheet
 import cash_flow_statement
 import stock_price
+import pandas as pd
+import numpy as np
 import yfinance as yf
 import json
 na = "N/A"
@@ -53,22 +55,67 @@ def free_cash_flow_per_share(ticker):
   except Exception as e:
     return na
 
-"""
+# Last 4 years growth
 def revenue_growth(ticker):
+  rev = []
+  avg = 0
+  stock = yf.Ticker(ticker)
+  income_statement = stock.financials
+  for i in range(4):
+    rev.append(income_statement.loc['Total Revenue'][i])
+  try: 
+    for i in range(3):
+      avg += (rev[i] / rev[i+1] - 1) * 100      
+  except Exception as e:
+    return na   
+  return f"{avg / 3:.2f}%" 
+
+def dividend_yeild(ticker):
+
+  stock = yf.Ticker(ticker)
+  dividend_yield = stock.info['dividendYield']
+  try:
+    return f"{dividend_yield:.2f}%"  
+  except Exception as e:
+    return na
+
+
+def beta(ticker):
+  try:
+    #Get 1 year of given stock prices
+    stock_prices = []
+    stock = yf.Ticker(ticker)
+    history_data = stock.history(period="1y")
+    for i in range(len(history_data)):
+      stock_prices.append(history_data['Close'][i])
+
+    #Get 1 year of S&P 500 prices
+    SnP = []
+    sp = yf.Ticker("^GSPC")
+    history_data = sp.history(period="1y")  
+    for i in range(len(history_data)):
+      SnP.append(history_data['Close'][i])
+    
+    stck = pd.Series(stock_prices)
+    indx = pd.Series(SnP)
+    stck_returns  = stck.pct_change().dropna()
+    indx_returns = indx.pct_change().dropna()
+    covariance = stck_returns.cov(indx_returns)
+    variance = indx_returns.var()
+    beta_value = covariance / variance
+    return f"{beta_value:.2f}"
+  except Exception as e:
+    print(e)
+    return na
+
+"""
 def pe_growth(ticker):
 
 def return_on_investment(ticker):
 
 def return_one_equity(ticker):
-
-def dividend_yeild(ticker):
-
-def beta(ticker):
-
 #net current asset value per share
 def ncavps(ticker)
-
-def generate_report(ticker):
 """
 
 def generate_report(ticker):
@@ -80,9 +127,9 @@ def generate_report(ticker):
     "debt_equity": debt_equity(ticker),
     "free_cash_flow": free_cash_flow(ticker),
     "free_cash_flow_per_share": free_cash_flow_per_share(ticker),
+    "4_year_revenue_growth": revenue_growth(ticker),
+    "1_yr_daily_BETA": beta(ticker),
   }
 
   return data
-
-
 
