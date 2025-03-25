@@ -33,11 +33,10 @@ def description(desc):
     for rec in response_data:
         metric_keys+=rec['metric_keys']
     metric_keys = set(metric_keys)
-    data = {}
+    data = []
     for stock in stock_data.keys():
         temp = {key: stock_data[stock][key] for key in metric_keys}
-        temp["rationale"] = tickers_and_rationales[stock]
-        data[stock] = temp
+        data.append({'ticker': stock, 'rationale': tickers_and_rationales[stock], 'metrics': temp})
     return data
     
 def process_description(description):
@@ -84,4 +83,4 @@ def get_data(stocks:list):
     return all_stock_data
 
 if __name__ == '__main__':
-    app.run(port=5001, host='0.0.0.0', debug=True)
+    app.run(port=5000, host='0.0.0.0', debug=True)
