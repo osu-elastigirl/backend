@@ -1,13 +1,18 @@
 import json
 from elasticsearch import Elasticsearch
 
-# connects to index test1
-es = Elasticsearch(
-  "http://localhost:9200",
-  api_key="" # need local API key
-)
-# API key should have cluster monitor rights
-# print(es.info())
+# connects to Elasticsearch on droplet
+ES_HOST = "http://192.241.148.240:9200"
+es = Elasticsearch([ES_HOST],
+                   basic_auth = ("elastic", "elastigirl123")) # password (elastigirl123) should be removed if repo goes public
+
+'''
+# test connection
+if (es.ping()):
+    print("CONNECTED TO ELASTICSEARCH")
+else:
+    print("CONNECTION TO ELASTICSEARCH FAILED")
+'''
 
 # takes json as input to load into elasticsearch
 def loadData(data:json): 
