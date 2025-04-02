@@ -26,3 +26,38 @@ def loadData(data:json):
 def searchElastic(symbol:str):
     result = es.search(index="stock_data", q=symbol)
     return result
+
+def store_yfinance_metric(symbol: str, date: str, metric: str, value: float):
+    doc = {
+        "symbol": symbol,
+        "date": date,
+        "metric": metric,
+        "value": value
+    }
+    response = es.index(index="yfinance_data", body=doc)
+    return response
+
+
+def get_yfinance_metric(symbol: str, date: str, metric: str):
+    query = {
+        "query": {
+            "bool": {
+                "must": [
+                    {"match": {"symbol": symbol}},
+                    {"match": {"date": date}},
+                    {"match": {"metric": metric}}
+                ]
+            }
+        }
+    }
+    response = es.search(index="yfinance_data", body=query)
+
+    hits = response["hits"]["hits"]
+    return hits[0]["_source"]["value"] if hits else None
+
+
+
+
+
+
+
