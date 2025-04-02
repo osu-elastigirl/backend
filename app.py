@@ -23,16 +23,24 @@ def hello_world():
 def get_description():
     request_data = request.get_json()
     desc = request_data['description']
-    data = description(desc)
+    print("received description:")
+    print(desc)
+    all_data = False
+    if 'all_data' in request_data:
+        all_data = request_data['all_data']
+    data = description(desc, all_data)
     return json.dumps(data)
 
-def description(desc):
+def description(desc, all_data=False):
     response_data, stock_data = process_description(desc)
     tickers_and_rationales = {rec['ticker']: rec['rationale'] for rec in response_data}
     metric_keys = []
-    for rec in response_data:
-        metric_keys+=rec['metric_keys']
-    metric_keys = set(metric_keys)
+    if not all_data:
+        for rec in response_data:
+            metric_keys+=rec['metric_keys']
+        metric_keys = set(metric_keys)
+    else:
+        metric_keys = list(stock_data[list(tickers_and_rationales.keys())[0]].keys())
     data = []
     for stock in stock_data.keys():
         temp = {key: stock_data[stock][key] for key in metric_keys}
