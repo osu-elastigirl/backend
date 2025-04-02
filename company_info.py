@@ -15,8 +15,4 @@ def fetch_company_info(ticker):
     "founded_year": information.get("yearFounded", "N/A"),
     "website": information.get("website", "N/A"),
   } 
-  return data
-
-fetch_company_info("AAPL")
-    } 
     return data
