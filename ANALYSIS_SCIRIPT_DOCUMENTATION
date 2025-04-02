@@ -1,5 +1,5 @@
 Documentation for Using data analytics scripts
-
+-------------------------------------------------------------------------------------------------------
 Basic Company Info Scripts:
 
   company_info.py
@@ -34,22 +34,62 @@ Price scripts:
 
   stock_price.py 
     returns float stock price  
-
-
-
+-------------------------------------------------------------------------------------------------------
 
 Fundamental Metrics scripts:
 
   These are going to use the financial statments to calculate many of the common ratios used for evaluating stocks
   This will output a json file that can be sotred in elasticsearch for later use. Only should be done once for 
-  new data.
+  new data. Many of these ratios are key metrics investors use to determine wether a security is worth purchasing.
+  This should be some of the key data the gemini will use to make its rationale.
 
   fundamental_metrics.py 
+    
+    def price_eranings(ticker)
+     -> returns price earnings ratio
+  
+    def price_book(ticker)
+     -> returns price to book ratio
+    
+    def total_equity(ticker)
+     -> returns total equity 
+      total assets - total liabilites
+        
+    def debt_equity(ticker)
+      -> total deby / total equity
+    
+    def free_cash_flow(ticker)
+     -> returns free cash flow 
+        Operating cash flow - capital expenditures
+    
+    def free_cash_flow_per_share(ticker)
+     -> returns FCF to share ratio
+     -> bascailly what cash is avaible to be paid to sharholders
 
-    will return json with info
-    WORKING ON IT
+    def revenue_growth(ticker)
+     -> reutrns the percent change of revenue over last 4 annual reports
+     
+    def beta(ticker)
+     -> returns 1 year daily beta
+     -> every trading day from last year compared to the S&P500
 
-Technical Metric scripts:
+   
+    def generate_report(ticker)
+
+      generate report will return a dictionary all these items
+      { 
+      "price_earnings": price_earnings(ticker),
+      "price_book": price_book(ticker),
+      "total_equity": total_equity(ticker),
+      "debt_equity": debt_equity(ticker),
+      "free_cash_flow": free_cash_flow(ticker),
+      "free_cash_flow_per_share": free_cash_flow_per_share(ticker),
+      "4_year_revenue_growth": revenue_growth(ticker),
+      "1_yr_daily_BETA": beta(ticker),
+      }
+-------------------------------------------------------------------------------------------------------
+
+Technical Metric scripts (TBD MAY NOT INCLUDE):
 
   This is also going to output a json that could be ingested into elastic search. This is encompass technical analysis
   metrics just as beta, moving averages, RSI... Although this can be ingested into elastic search, this information
@@ -59,6 +99,7 @@ Technical Metric scripts:
 
     will return json with info
     WORKING ON IT
+-------------------------------------------------------------------------------------------------------
 
 Financial statement scripts: 
 

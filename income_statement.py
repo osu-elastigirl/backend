@@ -29,7 +29,6 @@ def fetch_quarterly_AVG(ticker, data_name):
         return "N/A"
       value += temp
     return value/4
-
   print(data_name + " does not exists...")
   return "N/A"
 
