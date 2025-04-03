@@ -1,1 +1,9 @@
 firebase_functions~=0.1.0
+flask
+google-genai
+pydantic
+flask-cors
+requests
+yfinance
+numpy
+pandas
