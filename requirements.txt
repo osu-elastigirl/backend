@@ -4,3 +4,5 @@ pydantic
 flask-cors
 requests
 yfinance
+numpy
+pandas

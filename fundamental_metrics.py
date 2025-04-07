@@ -27,7 +27,7 @@ def price_earnings(ticker):
   #fetch_es = elastic.get_yfinance_metric(ticker, date, "price_earnings")
   try:
     pe = stock_price.fetch(ticker) / income_statement.fetch_quarterly_TTM(ticker, "Diluted EPS")
-    return f"{pe:.2f}"
+    return pe
   except Exception as e:
     return na
 

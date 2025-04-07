@@ -2,10 +2,10 @@ import yfinance as yf
 import json
 
 def fetch_company_info(ticker):
-  company = yf.Ticker(ticker)
-  information = company.info
+    company = yf.Ticker(ticker)
+    information = company.info
 
-  data = {
+    data = {
     "name": information.get("longName", "N/A"), 
     "description": information.get("longBusinessSummary", "N/A"),
     "sector": information.get("sector", "N/A"),
@@ -15,6 +15,4 @@ def fetch_company_info(ticker):
     "founded_year": information.get("yearFounded", "N/A"),
     "website": information.get("website", "N/A"),
   } 
-  return data
-
-fetch_company_info("AAPL")
+    return data

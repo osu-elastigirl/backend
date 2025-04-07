@@ -2,6 +2,7 @@ import requests
 import json
 import datetime
 from config import FINNHUB_API_KEY  # Your API key should be stored securely here.
+import pandas as pd
 
 def get_recommendation_trends(symbol: str) -> list:
     """
@@ -35,7 +36,9 @@ def get_company_news(symbol: str, from_date: str, to_date: str) -> list:
         "token": FINNHUB_API_KEY
     }
     response = requests.get(url, params=params)
+    resp_df = pd.DataFrame(response.json())
+    ret = resp_df[['headline','summary','url']]
     if response.status_code == 200:
-        return response.json()
+        return ret.to_dict()
     else:
         response.raise_for_status()
