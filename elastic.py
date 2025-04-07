@@ -1,6 +1,8 @@
 import json
 from elasticsearch import Elasticsearch
 
+#Some changes
+
 # connects to Elasticsearch on droplet
 ES_HOST = "http://192.241.148.240:9200"
 es = Elasticsearch([ES_HOST],
