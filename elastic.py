@@ -55,9 +55,3 @@ def get_yfinance_metric(symbol: str, date: str, metric: str):
     hits = response["hits"]["hits"]
     return hits[0]["_source"]["value"] if hits else None
 
-
-
-
-
-
-
