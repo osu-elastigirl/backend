@@ -20,7 +20,6 @@ def fetch_quarterly_TTM(ticker, data_name):
     return na
   fetch_es = elastic.get_yfinance_metric(ticker, date, data_name)
   if fetch_es == None:  
-    print("here")
     company = yf.Ticker(ticker)
     statement = company.quarterly_financials
     value = 0 
@@ -61,4 +60,4 @@ def fetch_quarterly_AVG(ticker, data_name):
   print(data_name + " does not exists...")
   return "N/A"
 
-print(fetch_quarterly_TTM("AAPL", "Total Revenue"))
+#print(fetch_quarterly_TTM("AAPL", "Total Revenue"))
