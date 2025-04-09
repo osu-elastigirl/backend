@@ -6,6 +6,7 @@ from services.finnhub_service import get_recommendation_trends, get_company_news
 from company_info import fetch_company_info
 from fundamental_metrics import price_earnings
 import pandas as pd
+import elastic
 
 flask_cors.logging.getLogger('flask_cors').level = flask_cors.logging.DEBUG
 
@@ -87,7 +88,9 @@ def get_data(stocks:list):
         company_info = fetch_company_info(stock)
         all_stock_data[stock].update(company_info)
         all_stock_data[stock]["price_earnings"] = price_earnings(stock)
-        
+
+    elastic.uploadData(all_stock_data, "finnhub_data")
+    
     return all_stock_data
 
 if __name__ == '__main__':

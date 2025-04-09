@@ -1,6 +1,11 @@
 import json
 from elasticsearch import Elasticsearch
 
+"""
+username = json.load(open('config.json'))['es_username']
+password = json.load(open('config.json'))['es_password']
+"""
+
 # connects to Elasticsearch on droplet
 ES_HOST = "http://192.241.148.240:9200"
 es = Elasticsearch([ES_HOST],
@@ -15,9 +20,9 @@ else:
 '''
 
 # takes json as input to load into elasticsearch
-def loadData(data:json): 
+def uploadData(data:json, index_name): 
     operations = []
-    action = {"index": {"_index": "stock_data"}}
+    action = {"index": {"_index": index_name}}
     operations.append(action)
     operations.append(data)
     response = es.bulk(index="index_for_python_test", body=operations)
