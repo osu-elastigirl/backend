@@ -25,10 +25,12 @@ def get_description():
     desc = request_data['description']
     all_data = request_data.get('all_data', False)
 
-    data = asyncio.run(description(desc, all_data))
+    # data = asyncio.run(description(desc, all_data))
+    data = description(desc, all_data)
     return jsonify(data)
 
 def description(desc, all_data=False):
+    # return _description(desc, all_data)
     return asyncio.run(_description(desc, all_data))
 
 async def _description(desc, all_data=False):
@@ -74,8 +76,8 @@ async def get_data(stocks):
             print(f"Error fetching company news for {stock}: {e}")
             news = []
 
-        company_info = await fetch_company_info(stock)
-        pe = await price_earnings(stock)
+        company_info = fetch_company_info(stock) # await fetch_company_info
+        pe = price_earnings(stock) # await price_earnings(stock)
 
         return stock, {
             "recommendation_trends": rec_trends,

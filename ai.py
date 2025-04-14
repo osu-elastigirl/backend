@@ -15,7 +15,7 @@ class Recommendation(BaseModel):
 
 async def getTickers(api_key: str, description: str):
     client = genai.Client(api_key=api_key)
-    return await client.models.generate_content(
+    response = client.models.generate_content(
         model='gemini-2.0-flash',
         contents='Give me the tickers for stocks based on this description: ' + description,
         config={
@@ -23,10 +23,11 @@ async def getTickers(api_key: str, description: str):
             'response_schema': list[Ticker],
         },
     )
+    return response
 
 async def get_recommendations(api_key: str, description: str, tickers: List[str], data: dict):
     client = genai.Client(api_key=api_key)
-    return await client.models.generate_content(
+    response = client.models.generate_content(
         model='gemini-2.0-flash',
         contents=(
             f'Here are some stocks that matched the description "{description}": '
@@ -40,3 +41,4 @@ async def get_recommendations(api_key: str, description: str, tickers: List[str]
             'response_schema': list[Recommendation],
         },
     )
+    return response
